@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPS | Elektroinstallationen & Photovoltaik</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            line-height:1.6;
+            color:#333;
+        }
+
+        header{
+            background:#111827;
+            color:white;
+            padding:20px 10%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0;
+        }
+
+        .logo{
+            font-size:1.8rem;
+            font-weight:bold;
+            color:#facc15;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:25px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#facc15;
+        }
+
+        .hero{
+            height:85vh;
+            background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80");
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content h1{
+            font-size:3rem;
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            font-size:1.2rem;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:14px 30px;
+            background:#facc15;
+            color:#000;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        .section{
+            padding:80px 10%;
+        }
+
+        .section h2{
+            text-align:center;
+            margin-bottom:40px;
+            color:#111827;
+        }
+
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:#f5f5f5;
+            padding:30px;
+            border-radius:10px;
+            text-align:center;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            color:#111827;
+        }
+
+        .about{
+            background:#f8fafc;
+            text-align:center;
+        }
+
+        .references{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .reference{
+            background:#e5e7eb;
+            padding:25px;
+            border-radius:10px;
+        }
+
+        .contact{
+            background:#111827;
+            color:white;
+        }
+
+        .contact-info{
+            text-align:center;
+            font-size:1.1rem;
+        }
+
+        footer{
+            background:#0f172a;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            nav ul{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .hero-content h1{
+                font-size:2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">⚡ ElektroSolar Müller</div>
+
+    <nav>
+        <ul>
+            <li>#homeStart</a></li>
+            <li>#leistungenLeistungen</a></li>
+            <li>#ueber-unsÜber Uns</a></li>
+            <li><a href="#referenzen">Referenzen</         <li><a href="#kontakt"></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Ihr Fachbetrieb für Elektro & Solaranlagen</h1>
+        <p>
+            Moderne Elektroinstallationen, Photovoltaikanlagen,
+            Speicherlösungen und Smart Home Systeme aus einer Hand.
+        </p>
+        <a href="#kontakt" classnfragen</a>
+    </div>
+</section>
+
+<section class="section" id="leistungen">
+    <h2>Unsere Leistungen</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🏠 Elektroinstallationen</h3>
+            <p>
+                Komplette Elektroinstallationen für Neubauten,
+                Umbauten und Sanierungen.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>☀️ Photovoltaik</h3>
+            <p>
+                Planung und Installation moderner Solaranlagen
+                für private und gewerbliche Kunden.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔋 Stromspeicher</h3>
+            <p>
+                Maximieren Sie Ihren Eigenverbrauch mit modernen
+                Batteriespeichersystemen.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚗 Wallboxen</h3>
+            <p>
+                Professionelle Installation von Ladeinfrastruktur
+                für Elektrofahrzeuge.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏡 Smart Home</h3>
+            <p>
+                Intelligente Steuerung von Beleuchtung,
+                Heizung und Sicherheitssystemen.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🛠 Wartung & Service</h3>
+            <p>
+                Regelmäßige Wartungen, Reparaturen und
+                schnelle Hilfe bei Störungen.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section about" id="ueber-uns">
+    <h2>Über Uns</h2>
+
+    <p>
+        Seit vielen Jahren steht ElektroSolar Müller für Qualität,
+        Zuverlässigkeit und innovative Energielösungen.
+        Unser erfahrenes Team begleitet Sie von der Planung bis zur
+        Fertigstellung Ihres Projekts.
+    </p>
+
+    <br>
+
+    <p>
+        Egal ob Einfamilienhaus, Mehrfamilienhaus oder Gewerbeobjekt:
+        Wir finden die passende Lösung für Ihre Elektro- und Solarprojekte.
+    </p>
+</section>
+
+<section class="section" id="referenzen">
+    <h2>Referenzen</h2>
+
+    <div class="references">
+
+        <div class="reference">
+            <h3>Einfamilienhaus Freiburg</h3>
+            <p>
+                Komplette Elektroinstallation inklusive Smart Home
+                und Solaranlage.
+            </p>
+        </div>
+
+        <div class="reference">
+            <h3>Gewerbehalle Offenburg</h3>
+            <p>
+                Installation einer 120 kWp Photovoltaikanlage
+                inklusive Batteriespeicher.
+            </p>
+        </div>
+
+        <div class="reference">
+            <h3>Mehrfamilienhaus Lahr</h3>
+            <p>
+                Modernisierung der Elektroanlagen und Einbau
+                mehrerer Wallboxen.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section contact" id="kontakt">
+    <h2>Kontakt</h2>
+
+    <div class="contact-info">
+        <p><strong>ElektroSolar Müller</strong></p>
+        <p>Musterstraße 10, 77972 Mahlberg</p>
+        <p>📞 +49 123 456789</p>
+        <p>✉️ info@elektrosolar-mueller.de</p>
+        <br>
+        <p>
+            Kontaktieren Sie uns für ein unverbindliches Angebot.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2026 ElektroSolar Müller | Elektroinstallationen &
+        Photovoltaik Lösungen
+    </p>
+</footer>
+
+</body>
+</html>
